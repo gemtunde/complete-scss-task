@@ -26,6 +26,15 @@ h2 {
   font-weight: bold;
 }
 
+.error, .critical-error {
+  color: red;
+}
+
+.critical-error {
+  border: 1px solid #333;
+  font-weight: bold;
+}
+
 p {
   font-family: Verdana, Arial, sans-serif;
 }
@@ -34,10 +43,14 @@ a {
   color: #f27731;
 }
 
-.warning-button {
+.warning-button, .cta-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px;
+}
+
+.cta-button {
+  border-radius: 15px;
 }
 
 #header {

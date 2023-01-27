@@ -25,6 +25,15 @@ h2 {
     @include large-text()
 }
 
+.error {
+    color: red;
+}
+.critical-error {
+    @extend .error;
+    border: 1px solid #333;
+    font-weight: bold;
+}
+
 p {
     font-family: $text-font;
 }
@@ -34,6 +43,10 @@ a{
 .warning-button {
     @include warning;
     padding: 8px 12px;
+}
+.cta-button {
+    @extend .warning-button ; 
+    @include round ;
 }
 #header {
     @include box(20px, 1px solid #333) ;
